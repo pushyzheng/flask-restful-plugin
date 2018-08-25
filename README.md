@@ -21,6 +21,16 @@ def hello():
     return 'hello'
 ```
 
+插件将自动封装返回数据的结构
+
+```json
+{
+    "code": 200,
+    "data": "hello",
+    "message": ""
+}
+```
+
 自动注入JSON，并装换成响应的SQLAlchemy对象，并且能够自动校验不为空的字段属性：
 
 ```python
@@ -45,7 +55,7 @@ def res_error():
 
 ## Contact
 
-[博客](htts://pushy.site)
+[博客](https://pushy.site)
 
 ## License
 
